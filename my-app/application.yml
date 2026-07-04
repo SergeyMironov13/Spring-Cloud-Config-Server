@@ -1,0 +1,18 @@
+app:
+  name: My Spring Boot Application
+  version: 1.0.0
+  description: Default configuration for all environments
+  author: Your Name
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: my-app
+
+logging:
+  level:
+    root: INFO
+    com.example: DEBUG
+

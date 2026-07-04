@@ -1,0 +1,21 @@
+app:
+  environment: development
+  debug: true
+  database:
+    url: jdbc:h2:mem:devdb
+    username: dev_user
+    password: dev_pass
+    driver: org.h2.Driver
+
+server:
+  port: 8081
+
+logging:
+  level:
+    root: DEBUG
+    com.example: TRACE
+
+custom:
+  feature:
+    enable-new-ui: true
+    max-retries: 5

@@ -1,0 +1,28 @@
+app:
+  environment: production
+  debug: false
+  database:
+    url: jdbc:postgresql://prod-host.example.com:5432/proddb
+    username: prod_user
+    password: ${DB_PASSWORD:secure_password}
+    driver: org.postgresql.Driver
+    pool-size: 20
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: WARN
+    com.example: INFO
+
+custom:
+  feature:
+    enable-new-ui: false
+    max-retries: 3
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
